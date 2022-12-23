@@ -148,3 +148,12 @@ const attachEventListeners = () => {
  
 generateGame()
 attachEventListeners()
+
+
+const ks = new Audio('./assets/memory_ost.mp3')
+let userinteraction = 0
+document.addEventListener('click',()=>{
+ if(userinteraction) return;
+ userinteraction++;
+ ks.play()
+})
